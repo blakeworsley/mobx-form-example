@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { autorun } from 'mobx';
 import { Provider } from 'mobx-react';
 import RootStore from '../stores/root';
 import App from './App';

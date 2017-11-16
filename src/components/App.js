@@ -11,6 +11,7 @@ export default class App extends Component {
     return (
       <div>
         {rootStore.thing}
+        <input />
       </div>
     );
   }
