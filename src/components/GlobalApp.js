@@ -7,12 +7,12 @@ import App from './App';
 export default class GlobalApp extends Component {
   constructor(props) {
     super(props);
-    // RootStore.init(props);
+    this.rootStore = new RootStore();
   }
 
   render() {
     return (
-      <Provider rootStore={RootStore}>
+      <Provider rootStore={this.rootStore}>
         <App/>
       </Provider>
     );

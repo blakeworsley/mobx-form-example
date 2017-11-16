@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react'
 import '../styles/App.css';
 
-// @observer
+@inject('rootStore')
+@observer
 export default class App extends Component {
 
   render() {
-    console.log(observer);
+    const { rootStore } = this.props;
     return (
       <div>
-        App
+        {rootStore.thing}
       </div>
     );
   }
